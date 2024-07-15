@@ -46,7 +46,8 @@ To run this code, you will need:
       - Jupyter is a script editor that runs through your web browser.
       - Note: internet connection is not required for jupyter lab to work in your browser. 
 
-  7. The following link is to a video which shows steps 1-6 visually: https://github.com/user-attachments/assets/18e07f38-7708-45ea-b96e-67bf583f63d8
+  7. The following link is to a video which shows steps 1-6 visually: 
+      https://github.com/user-attachments/assets/18e07f38-7708-45ea-b96e-67bf583f63d8
 
   8. Use the file naviation bar on the left hand side of the jupyter window to access the folder directory for the cloned repository.
 
