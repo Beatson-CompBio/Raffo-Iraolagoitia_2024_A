@@ -25,19 +25,27 @@ To run this code, you will need:
 # **How to create the python environment**
 
   0. Clone the repository, make sure anaconda and fiji are downloaded. 
+
   1. Open up the anaconda prompt which is included in the download of anaconda.
+
   2. Locate the .yaml file in the cloned repository and copy the file location.
      - There are two .yaml files in the repository, one for working with a nvidia GPU (cell_interactions_gpu_nvidia.yaml), and one for working without a GPU (cell_interactions.yaml).
      - During our testing, access to a GPU can decrease the time spend on cell segmentation by 10 times (eg: 60 minutes becomes 6 minutes). It is recommended to run this analysis sequence on a system that has access to a GPU.
+
   3. Use the following command in the anaconda prompt to build the python environment: conda env create -f path_to_the_yaml_file
      - NOTE: path_to_the_yaml_file should be replaced by the file path to the .yaml file, eg: C:/Users/JBloggs/Documents/Github/Raffo-Iraolagoitia_2024_A/cell_interactions/gpu/nvidia.yaml
+
   4. The previous command will automatically build the python environment required to run the analysis sequence. The process is finished when you see the following comments on the screen: 
 ![Screenshot 2024-07-15 151745](https://github.com/user-attachments/assets/071dd6f4-c654-4bd1-b223-206c20126dff)
+
   5. The python environment can then be activated using the following command: conda activate cell_interactions_gpu
+
   6. The python scripts used for the analysis were created using jupyter-lab []. The jupyter script editor can be opened using the analconda prompt by typing the command: jupyter lab.
       - Jupyter is a script editor that runs through your web browser.
       - Note: internet connection is not required for jupyter lab to work in your browser. 
+
   7. The following link is to a video which shows steps 1-6 visually: https://github.com/user-attachments/assets/18e07f38-7708-45ea-b96e-67bf583f63d8
+
   8. Use the file naviation bar on the left hand side of the jupyter window to access the folder directory for the cloned repository.
 
 
