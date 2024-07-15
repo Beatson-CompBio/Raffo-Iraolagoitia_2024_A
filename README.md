@@ -14,7 +14,10 @@ The outputs from part 4 of the analysis pipeline are
   - The cell segmentation labels as a .tif
   - cell tracking data used in the analysis.
   - Information for the interactions between the gamma-delta-T cells and the macrophage cells.
-  - Analysis of the distance travelled and cell speed for each cell. 
+  - Analysis of the distance travelled and cell speed for each cell.
+
+** Description ** 
+
 
 # **Requirements** 
 
