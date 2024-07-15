@@ -38,8 +38,7 @@ To run this code, you will need:
   3. Use the following command in the anaconda prompt to build the python environment: conda env create -f path_to_the_yaml_file
      - NOTE: path_to_the_yaml_file should be replaced by the file path to the .yaml file, eg: C:/Users/JBloggs/Documents/Github/Raffo-Iraolagoitia_2024_A/cell_interactions/gpu/nvidia.yaml
 
-  4. The previous command will automatically build the python environment required to run the analysis sequence. The process is finished when you see the following comments on the screen: 
-![Screenshot 2024-07-15 151745](https://github.com/user-attachments/assets/071dd6f4-c654-4bd1-b223-206c20126dff)
+  4. The previous command will automatically build the python environment required to run the analysis sequence.
 
   5. The python environment can then be activated using the following command: conda activate cell_interactions_gpu
 
