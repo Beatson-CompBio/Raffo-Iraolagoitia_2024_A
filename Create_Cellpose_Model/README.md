@@ -13,3 +13,9 @@ A ground-truth for these images was generated manually using QuPath [2], and the
 
 
 ## Retrain_cellpose_model.ipynb
+Once the ground truth for the training images has been completed, retraining the cellpose models can be performed using the script: Retrain_cellpose_model.ipynb. 
+
+This requires three inputs from the user at the beginning, these are: 
+  1. The name of the cell type/objects to be segmented
+  2. the split between the training and the validation data.
+  3. the cellpose model that is to be retrained. 
