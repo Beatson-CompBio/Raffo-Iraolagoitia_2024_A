@@ -34,4 +34,3 @@ The cell here contains all of the parameters that are used to retrain the cellpo
 When this cell is run, the retraining of the cellpose model will begin. So these parameters should be altered before execution if required. The parameters in the script are the default values of the cellpose retraining model. The retrained segmentation model, and the metadata for the model will be saved in a folder called: "models" which can be found in the same file level as the training image folder. 
 
 The cell titled: "Test the model on Validation Data", runs a perfomance analysis of the newly retrained model on the validation data, with the performance of the model evaluated by the average precision of the models performance across the validation dataset. The results of this analysis is saved into a .csv file, along with the metadata and training parameters of the model. 
-
