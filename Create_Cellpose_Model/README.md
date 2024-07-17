@@ -18,4 +18,20 @@ Once the ground truth for the training images has been completed, retraining the
 This requires three inputs from the user at the beginning, these are: 
   1. The name of the cell type/objects to be segmented
   2. the split between the training and the validation data.
-  3. the cellpose model that is to be retrained. 
+  3. the cellpose model that is to be retrained - a list of which can be found: https://cellpose.readthedocs.io/en/latest/models.html 
+
+Once these values have been inputted into the system, the user can run the remaining cells in the script to retain the cellpose mode. The user will be asked to point the program to the location of the Training images and their corresponding ground_truths, this is done by navigating through a dialogue box, similar to the file explorer in windows. From here, the program randomly allocates images to either the "training" or "validation" datasets. The Training dataset is used to retrain the selected cellpose model, whereas the validation dataset is used to assess the performance of the retrained-cellpose model. It is recommended that there are significantly more images in the training dataset, as a large and varied training dataset will result in a more accurate segmentation in the end. For this work, the ratio of training data to validation data was 80:20. 
+
+There is a cell in the script with the title: "Train a model on the training datasets". 
+The cell here contains all of the parameters that are used to retrain the cellpose model. Here the user can change: 
+  - The channel of the image to use for segmentation.
+  - The number of epochs used for training
+  - The learning rate of the model.
+  - The weight decay of the mode.
+  - the number of images used per epoch
+  - The split of the training data between the data used for training the model, and the data used to test the performance of the model during training.
+
+When this cell is run, the retraining of the cellpose model will begin. So these parameters should be altered before execution if required. The parameters in the script are the default values of the cellpose retraining model. The retrained segmentation model, and the metadata for the model will be saved in a folder called: "models" which can be found in the same file level as the training image folder. 
+
+The cell titled: "Test the model on Validation Data", runs a perfomance analysis of the newly retrained model on the validation data, with the performance of the model evaluated by the average precision of the models performance across the validation dataset. The results of this analysis is saved into a .csv file, along with the metadata and training parameters of the model. 
+
