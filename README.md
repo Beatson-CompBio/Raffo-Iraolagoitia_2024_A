@@ -16,9 +16,6 @@ The outputs from part 4 of the analysis pipeline are
   - Information for the interactions between the gamma-delta-T cells and the macrophage cells.
   - Analysis of the distance travelled and cell speed for each cell.
 
-** Description ** 
-
-
 # **Requirements** 
 
 To run this code, you will need: 
