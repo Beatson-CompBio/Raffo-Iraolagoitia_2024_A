@@ -3,7 +3,7 @@
 We provide the full analysis pipeline used to analyse the interactions between GDT and macrophage cells in time-lapse images recorded using a Sartorius S3 incucyte. In the following section, we provide a description of analysis scripts and their relation to the pipeline.  
 
 # 1.Sort_incucyte_images.ipynb 
-The raw images from the incucyte are exported as 1 image per time point, per well, per plate. This can result in many image files being exported into a single folder. In addition to being unhelpful from the point of view of making data "Findable" in the FAIR pipeline, this format of image storage makes life difficult when creating scripts for bioimage analysis. This script is designed to take as an input from the user, the folder containing all the images exported from the incucyte. The script then uses the standard form of the file naming convention to generate a folder structure for the images and sort the images into the folders that match their file name. The general form of the folder structure is: 
+The raw images from the incucyte are exported as 1 image per time point, per well, per plate. This can result in many image files being exported into a single folder. In addition to being unhelpful from the point of view of making data "Findable" in the FAIR pipeline [1], this image storage format makes life difficult when creating scripts for bioimage analysis. This script is designed to take as an input from the user, the folder containing all the images exported from the incucyte. The script then uses the standard form of the file naming convention to generate a folder structure for the images and sort the images into the folders that match their file name. The general form of the folder structure is: 
 - Experiment name
   - Plate Name
       - Well Number
@@ -19,7 +19,7 @@ To make image analysis easier in the long term, this script collates the individ
 The only user input required for this script is to select the "Plate Name" folder from the file directory. 
 
 # 3.Drift_correction_macro.ijm
-This is a script that is used to correct the drift that arises during the process of imaging the plate across the time-lapse experiment. To correct for the image drift, we make use of the macro in Fiji called "Correct 3d Drift". The script asks the user to select the folder containing the time-lapse files created when running the script 2. Create_stack_images.ipynb, the script expects the folder "stack_images" to be selected. The script is automated to convert the three image channels to an 8-bit image, and then merge all the channels into a single image. The drift correction is then applied to the merged image, with the third image channel (phase channel) used for the drift correction. The following parameters for the drift correction macro are used in this script: 
+This is a script that is used to correct the drift that arises during the process of imaging the plate across the time-lapse experiment. To correct for the image drift, we make use of the macro in Fiji called "Correct 3d Drift" [2]. The script asks the user to select the folder containing the time-lapse files created when running the script 2. Create_stack_images.ipynb, the script expects the folder "stack_images" to be selected. The script is automated to convert the three image channels to an 8-bit image, and then merge all the channels into a single image. The drift correction is then applied to the merged image, with the third image channel (phase channel) used for the drift correction. The following parameters for the drift correction macro are used in this script: 
   - channel=3
   - sub_pixel only=0
   - lowest=1
@@ -41,20 +41,26 @@ The steps for the analysis are:
 5. For each of the Drift_Correction sub-folders:  
     i. Load in the three image channels for the image region.  
    ii. Threshold the fluorescence image channel (Green and Red channels).  
-  iii. Use cellpose to segment the fluorescence imaging channels using the thresholded images.  
+  iii. Use cellpose to segment the fluorescence imaging channels using the thresholded images [3].  
    iv. Segment the phase channel using cellpose.  
     v. Sort the phase masks into different cell groups:  
        &nbsp;    - GDT cells   
        &nbsp;    - Macrophage cells  
        &nbsp;    - Dead cells  
-   vi. Filter the GDT masks to remove false positives by size.
-  vii. Count the number of each of the cell types.
- viii. Track the cells using the BTrack package.
-   ix. Filter tracks to only include those cells tracked for over 90% of the time-lapse duration.
-    x. Detect the interaction between the GDT cells and the Macrophage cells, by looking at the overlap between the Macrophage masks, and the GDT cell masks.
-   xi. Quantify the interactions between the two different cell types.
-  xii. Generate a summary file for the image region being analysed.
- xiii. Save: The data analysis, the cellpose segmentation for each channel, and the tracking. 
+   vi. Filter the GDT masks to remove false positives by size.  
+  vii. Count the number of each of the cell types.  
+ viii. Track the cells using the BTrack package [4].  
+   ix. Filter tracks to only include those cells tracked for over 90% of the time-lapse duration.  
+    x. Detect the interaction between the GDT cells and the Macrophage cells, by looking at the overlap between the Macrophage masks, and the GDT cell masks.  
+   xi. Quantify the interactions between the two different cell types.  
+  xii. Generate a summary file for the image region being analysed.  
+ xiii. Save: The data analysis, the cellpose segmentation for each channel, and the tracking.   
+
+# Bibliography
+1. Wilkinson, M., Dumontier, M., Aalbersberg, I. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18
+2. Parslow A, Cardona A, Bryson-Richardson RJ. Sample drift correction following 4D confocal time-lapse imaging. J Vis Exp. 2014 Apr 12;(86):51086. doi: 10.3791/51086. PMID: 24747942; PMCID: PMC4166950.
+3. Pachitariu, M., Stringer, C. Cellpose 2.0: how to train your own model. Nat Methods 19, 1634–1641 (2022). https://doi.org/10.1038/s41592-022-01663-4
+4. Ulicna K, Vallardi G, Charras G and Lowe AR, Automated deep lineage tree analysis using a Bayesian single cell tracking approach, Front in Comp Sci (2021), https://doi.org/10.3389/fcomp.2021.734559
 
 
 
