@@ -33,13 +33,13 @@ To run this code, you will need:
      - During our testing, access to a GPU can decrease the time spend on cell segmentation by 10 times (eg: 60 minutes becomes 6 minutes). It is recommended to run this analysis sequence on a system that has access to a GPU.
 
   3. Use the following command in the anaconda prompt to build the python environment: conda env create -f path_to_the_yaml_file
-     - NOTE: path_to_the_yaml_file should be replaced by the file path to the .yaml file, eg: C:/Users/JBloggs/Documents/Github/Raffo-Iraolagoitia_2024_A/cell_interactions/gpu/nvidia.yaml
+     - NOTE: replace path_to_the_yaml_file with the .yaml file path, eg: C:/Users/JBloggs/Documents/Github/Raffo-Iraolagoitia_2024_A/cell_interactions/gpu/nvidia.yaml
 
   4. The previous command will automatically build the python environment required to run the analysis sequence.
 
   5. The python environment can then be activated using the following command: conda activate cell_interactions_gpu
 
-  6. The python scripts used for the analysis were created using jupyter-lab []. The jupyter script editor can be opened using the analconda prompt by typing the command: jupyter lab.
+  6. The python scripts used for the analysis were created using jupyter-lab []. The jupyter script editor can be opened using the anaconda prompt by typing the command: jupyter lab.
       - Jupyter is a script editor that runs through your web browser.
       - Note: internet connection is not required for jupyter lab to work in your browser. 
 
