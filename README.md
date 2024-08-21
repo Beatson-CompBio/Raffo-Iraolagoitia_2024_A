@@ -47,7 +47,8 @@ C:/Users/JBloggs/Documents/Github/Raffo-Iraolagoitia_2024_A/cell_interactions/gp
 
   7. Use the file navigation bar on the left-hand side of the jupyter window to access the folder directory for the cloned repository.
 
-# **References **
+# References 
+
 [1]  Kluyver, Thomas & Ragan-Kelley, Benjamin & Perez, Fernando & Granger, Brian & Bussonnier, Matthias & Frederic, Jonathan & Kelley, Kyle & Hamrick, Jessica & Grout, Jason & Corlay, Sylvain & Ivanov, Paul & Avila, Damián & Abdalla, Safia & Willing, Carol & [Unknown, Jupyter. (2016). Jupyter Notebooks – a publishing format for reproducible computational workflows.
 
 
