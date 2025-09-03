@@ -46,35 +46,3 @@ for (i=0; i<lengthOf(list); i++) {
 
 }
 
-
-//open("//data.beatson.gla.ac.uk/data/RCORBYN/User_Data/20240108_Ximena_cell_tracking/incucyte/XR175/XR175/Stack_images/G11/XR175_GreenUN_G11_1_2023y12m18d_16h50m_time_stack.tif");
-//selectImage("XR175_GreenUN_G11_1_2023y12m18d_16h50m_time_stack.tif");
-//open("//data.beatson.gla.ac.uk/data/RCORBYN/User_Data/20240108_Ximena_cell_tracking/incucyte/XR175/XR175/Stack_images/G11/XR175_phase_G11_1_2023y12m18d_16h50m_time_stack.tif");
-//selectImage("XR175_phase_G11_1_2023y12m18d_16h50m_time_stack.tif");
-//open("//data.beatson.gla.ac.uk/data/RCORBYN/User_Data/20240108_Ximena_cell_tracking/incucyte/XR175/XR175/Stack_images/G11/XR175_RedUN_G11_1_2023y12m18d_16h50m_time_stack.tif");
-//selectImage("XR175_RedUN_G11_1_2023y12m18d_16h50m_time_stack.tif");
-//selectImage("XR175_phase_G11_1_2023y12m18d_16h50m_time_stack.tif");
-//selectImage("XR175_GreenUN_G11_1_2023y12m18d_16h50m_time_stack.tif");
-//selectImage("XR175_phase_G11_1_2023y12m18d_16h50m_time_stack.tif");
-//selectImage("XR175_RedUN_G11_1_2023y12m18d_16h50m_time_stack.tif");
-//setOption("ScaleConversions", true);
-//run("8-bit");
-//selectImage("XR175_GreenUN_G11_1_2023y12m18d_16h50m_time_stack.tif");
-//setOption("ScaleConversions", true);
-//run("8-bit");
-//selectImage("XR175_phase_G11_1_2023y12m18d_16h50m_time_stack.tif");
-//run("Merge Channels...", "c1=XR175_RedUN_G11_1_2023y12m18d_16h50m_time_stack.tif c2=XR175_GreenUN_G11_1_2023y12m18d_16h50m_time_stack.tif c4=XR175_phase_G11_1_2023y12m18d_16h50m_time_stack.tif create");
-//
-//
-//run("Properties...", "channels=3 slices=1 frames=50 pixel_width=1.0000 pixel_height=1.0000 voxel_depth=1.0000");
-//
-//
-//
-//run("Correct 3D drift", "channel=3 correct sub_pixel only=0 lowest=1 highest=1 max_shift_x=25 max_shift_y=25 max_shift_z=10");
-//run("Split Channels");
-//saveAs("Tiff", "//data.beatson.gla.ac.uk/data/RCORBYN/User_Data/20240108_Ximena_cell_tracking/incucyte/XR175/XR175/Drift_correction/_C3.tif");
-//close();
-//saveAs("Tiff", "//data.beatson.gla.ac.uk/data/RCORBYN/User_Data/20240108_Ximena_cell_tracking/incucyte/XR175/XR175/Drift_correction/_C2.tif");
-//close();
-//saveAs("Tiff", "//data.beatson.gla.ac.uk/data/RCORBYN/User_Data/20240108_Ximena_cell_tracking/incucyte/XR175/XR175/Drift_correction/_C1.tif");
-//close();
