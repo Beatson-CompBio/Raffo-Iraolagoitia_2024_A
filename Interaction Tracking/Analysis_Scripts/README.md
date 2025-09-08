@@ -41,7 +41,7 @@ The steps for the analysis are:
 5. For each of the Drift_Correction sub-folders:  
     i. Load in the three image channels for the image region.  
    ii. Threshold the fluorescence image channel (Green and Red channels).  
-  iii. Use cellpose to segment the fluorescence imaging channels using the thresholded images [3].  
+  iii. Use cellpose to segment the fluorescence imaging channels after the intensity threshold has been applied [3].  
    iv. Segment the phase channel using cellpose.  
     v. Sort the phase masks into different cell groups:  
        &nbsp;    - GDT cells   
