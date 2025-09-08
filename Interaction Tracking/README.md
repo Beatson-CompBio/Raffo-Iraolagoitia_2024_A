@@ -1,6 +1,9 @@
 # **Introduction**: 
 
-This analysis pipeline that quantifies the interaction time between gamma-delta-T cells and Macrophage cells. Images were recorded using the Sartorius S3 incucyte, as reported in the paper:  *V-gamma-1  gamma-delta T cells steer airway macrophages towards a pro-fibrotic response in lung adenocarcinoma, X. Raffo-Iraolagoitia, 2024.* 
+This analysis pipeline that quantifies the interaction time between gamma-delta-T cells and Macrophage cells. Images were recorded using the Sartorius S3 incucyte, as reported in the paper:  *V-gamma-1  gamma-delta T cells steer airway macrophages towards a pro-fibrotic response in lung adenocarcinoma, X. Raffo-Iraolagoitia, 2024.*  
+As the above folder structure suggests, the code is split into two distinct parts.  
+1. Analysis scripts: The code used to analyse the images from the incucyte and track interactions between $\gamma$ $\delta$ T cells and the Alveola Macrophages.
+2. A set of scripts that have been developed to generate a training dataset from the experiment data so that one may retrain the cellpose segmentation models to more accurately segment the specific cell type that they are working with. 
 
 ## **Summary of the analysis steps:** 
   1. Sort the image files from the incucyte into a standardised folder structure.
@@ -15,8 +18,5 @@ This analysis pipeline that quantifies the interaction time between gamma-delta-
   - cell tracking data used in the analysis.
   - Information for the interactions between the gamma-delta-T cells and the macrophage cells.
   - Analysis of the distance travelled and cell speed for each cell.
-
-
-
 
 
