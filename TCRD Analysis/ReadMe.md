@@ -10,4 +10,4 @@ background in the image. These ROI's are generated for each time point in the MI
 
 3. 20250730_TCRD_clustering analysis.ipynb - This python script takes as inputs the MIP-timelaspe image in part 1, and the ROI's generated in part 2. Using the ROI's, the cell and the representative background area are extracted 
 from the image. An intensity filter is applied to the cell so that only the pixels that have a value greater than 5 times the mean background intensity are used to generate a mask for the regions of interest within the cell.
-From this mask, the properties of the TCRD clustering are analysed, and the results of the analysis are exported to a .csv file for further inspection. 
+From this mask, the properties of the TCRD clustering are analysed, and the results of the analysis are exported to a .csv file for further inspection.
