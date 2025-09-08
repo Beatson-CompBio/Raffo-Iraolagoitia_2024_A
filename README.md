@@ -1,10 +1,10 @@
 # Introduction
 
 This repository holds the scripts used to some of the image analysis in the paper: 
-Vg1 gd T cells steer airway macrophages towards a pro-fibrotic response in an autochthonous lung cancer mouse model - X.Raffo 2025. 
+V $\gamma$ 1 $\gamma$ $\delta$ T cells steer airway macrophages towards a pro-fibrotic response in an autochthonous lung cancer mouse model - X.Raffo 2025. 
 
 Included here is the code for analysing:   
-1. The interactions between the $\gamma$ $\delta$ T cells and the alveolar macrophages from expeiments conducted using the Sartorius S3 Incucte microscope. This is contained within the "Interaction Tracking" folder in this repository.
+1. The interactions between the $\gamma$ $\delta$ T cells and the alveolar macrophages from experiments conducted using the Sartorius S3 Incucte microscope. This is contained within the "Interaction Tracking" folder in this repository.
 2. TCRD Clustering, which is contained in the folder "TCRD Analysis".
 
 Included in each folder is a brief description of the workflow and a summary of the expected outputs from the code.  
@@ -25,7 +25,7 @@ To run this code, you will need:
   2. Locate the .yaml file in the cloned repository and copy the file path.
      - There are two .yaml files in the repository, one for working with a nvidia GPU (cell_interactions_gpu_nvidia.yaml), and one for working without a GPU (cell_interactions.yaml).
      - During our testing, access to a GPU can decrease cell segmentation time by 10 (eg: 60 minutes becomes 6 minutes). It is recommended to run this analysis sequence on a system that has access to a GPU.
-     - If you wish to use the GPU, we recommend following the steps outlined on the cellpose Github page, as the GPU on your computers may not be the same make or model as the ones used in the development and executuion of this code: https://github.com/MouseLand/cellpose
+     - If you wish to use the GPU, we recommend following the steps outlined on the cellpose Github page, as the GPU on your computers may not be the same make or model as the ones used in the development and execution of this code: https://github.com/MouseLand/cellpose
 
   3. Use the following command in the Anaconda Prompt to build the Python environment:  
      <code>conda env create -f path_to_the_yaml_file</code>
