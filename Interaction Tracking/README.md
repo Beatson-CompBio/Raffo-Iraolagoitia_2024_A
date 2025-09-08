@@ -4,6 +4,7 @@ This analysis pipeline that quantifies the interaction time between gamma-delta-
 As the above folder structure suggests, the code is split into two distinct parts.  
 1. Analysis scripts: The code used to analyse the images from the incucyte and track interactions between $\gamma$ $\delta$ T cells and the Alveola Macrophages.
 2. A set of scripts that have been developed to generate a training dataset from the experiment data so that one may retrain the cellpose segmentation models to more accurately segment the specific cell type that they are working with.
+
 A full description of the code can be found within the respective folders. 
 
 ## **Summary of the analysis steps:** 
