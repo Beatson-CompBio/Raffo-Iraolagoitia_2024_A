@@ -37,13 +37,14 @@ C:/Users/JBloggs/Documents/Github/Interaction_Tracking/gpu/nvidia.yaml
 
   5. The Python scripts used for the analysis were created using jupyter-lab [1]. Type: <code>jupyter lab</code> into the Anaconda prompt to launch jupyter script editor, which will open in a browser.
 
+  6. The following link is to a video which shows steps 1-6 visually:   
+      https://github.com/user-attachments/assets/18e07f38-7708-45ea-b96e-67bf583f63d8
+
+  7. Use the file navigation bar on the left-hand side of the jupyter window to access the folder directory for the cloned repository.
+
+
 # References 
 
 [1]  Kluyver, Thomas & Ragan-Kelley, Benjamin & Perez, Fernando & Granger, Brian & Bussonnier, Matthias & Frederic, Jonathan & Kelley, Kyle & Hamrick, Jessica & Grout, Jason & Corlay, Sylvain & Ivanov, Paul & Avila, Damián & Abdalla, Safia & Willing, Carol & [Unknown, Jupyter. (2016). Jupyter Notebooks – a publishing format for reproducible computational workflows.
 
 
-
-  7. The following link is to a video which shows steps 1-6 visually:   
-      https://github.com/user-attachments/assets/18e07f38-7708-45ea-b96e-67bf583f63d8
-
-  8. Use the file navigation bar on the left-hand side of the jupyter window to access the folder directory for the cloned repository.
